@@ -19,5 +19,6 @@ EXPOSE 5000
 # Define environment variable
 ENV FLASK_APP=app.py
 
-# Run the Flask app
+# Run the Flask app command that will run when the container starts
+# We can pull images from docker hub also
 CMD ["flask", "run", "--host=0.0.0.0"]
